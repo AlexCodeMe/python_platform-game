@@ -81,8 +81,8 @@ class Bee(Enemy):
             self.kill()
     
 class Worm(Enemy):
-    def __init__(self, frames, pos, groups):
-        super().__init__(frames, pos, groups)
+    def __init__(self, frames, rect, groups):
+        super().__init__(frames, rect.topleft, groups)
        
     def move(self, dt):
         pass
